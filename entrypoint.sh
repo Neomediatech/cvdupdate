@@ -8,6 +8,5 @@ fi
 
 while true; do python3 -m cvdupdate update -V; sleep 3600; done &
 
-echo "param: $@"
 exec "$@"
 

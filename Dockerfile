@@ -26,15 +26,6 @@ RUN python3 -m pip install --user cvdupdate
 RUN python3 -m cvdupdate config set && \
     python3 -m cvdupdate config set --dbdir /var/www/html
 
-#python3 -m cvdupdate config set --dbdir /var/www/html
-#python3 -m cvdupdate config set --logdir /logs
-
-#python3 -m cvdupdate update
-
-#python3 -m cvdupdate --help
-
-#python3 -m pip install --user cvdupdate
-
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["apache2-foreground"]
